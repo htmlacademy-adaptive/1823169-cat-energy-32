@@ -5,11 +5,19 @@
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+````<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+````<link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+````<link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__logo logo">
-        <img class="logo__img" src="images/content/logo-mobile.png" width="33" height="38" alt="Логотип: радостный рыжий кот в желтом круге">
+        <picture>
+          <source width="70" height="60" type="image/png" media="(min-width: 1440px)" srcset="images/content/logo@1x.png 1x, images/content/logo@2x.png 2x">
+          <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/content/logo-tablet@1x.png 1x, images/content/logo-tablet@2x.png 2x">
+          <img class="logo__img" src="images/content/logo-mobile@1x.png" srcset="images/content/logo-mobile@2x.png 2x" width="33" height="38" alt="Логотип: радостный рыжий кот в желтом круге">
+        </picture>
         <img class="logo__name" src="images/content/logo-name.png" width="128" height="25" alt="Магазин Cat Energy">
       </div>
       <button class="menu-toggle" type="button">
@@ -33,7 +41,11 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__img" src="images/content/index-hero-mobile.png" width="280" height="270" alt="Упаковка корма: оранжевый стаканчик с логотипом магазина">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/content/index-hero@1x.png 1x, images/content/index-hero@2x.png 2x">
+          <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/content/index-hero-tablet@1x.jpg 1x, images/content/index-hero-tablet@2x.jpg 2x">
+          <img class="hero__img" src="images/content/index-hero-mobile@1x.png" srcset="images/content/index-hero-mobile@2x.png" width="280" height="270" alt="Упаковка корма: оранжевый стаканчик с логотипом магазина">
+        </picture>
         <a class="hero__link" href="#">подобрать программу</a>
       </section>
       <section class="programs">
@@ -78,8 +90,14 @@
           </div>
         </dl>
         <div class="example__slider slider">
-          <img class="slider__slide" src="images/content/cat-before-mobile.png" width="280" height="256" alt="Кот Борис до похудения">
-          <img class="slider__slide" src="images/content/cat-after-nobile.png" width="280" height="256" alt="Кот Борис после похудения">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content/cat-before-tablet@1x.png 1x, images/content/cat-before-tablet@2x.png 2x">
+            <img class="slider__slide" src="images/content/cat-before-mobile@1x.png" srcset="images/content/cat-before-mobile@2x.png" width="280" height="256" alt="Кот Борис до похудения">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content/cat-after-tablet@1x.png 1x, images/content/cat-after-tablet@2x.png 2x">
+            <img class="slider__slide" src="images/content/cat-after-mobile@1x.png" srcset="images/content/cat-after-mobile@2x.png" width="280" height="256" alt="Кот Борис после похудения">
+          </picture>
           <svg class="slider__control" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="18" width="4" height="257.02" rx="2" fill="#666666"/>
             <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
@@ -109,7 +127,7 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item flex">
+        <li class="socials__item">
           <a class="socials__link socials-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="socials-link__text visually-hidden">Youtube</span>
             <svg class="socials-link__icon" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
