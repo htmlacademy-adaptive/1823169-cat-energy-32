@@ -6,3 +6,7 @@
   line-height: 14px;
   text-transform: uppercase;
 }
+
+.hero__link {
+  @include button;
+}
