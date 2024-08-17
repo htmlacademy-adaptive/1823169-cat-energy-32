@@ -1,0 +1,19 @@
+.program {
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  font-family: $accent-font;
+  font-size: 24px;
+  line-height: 37px;
+  color: $text-title-color;
+  text-transform: uppercase;
+}
+
+.program__link {
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-nav-color;
+  text-decoration: none;
+}

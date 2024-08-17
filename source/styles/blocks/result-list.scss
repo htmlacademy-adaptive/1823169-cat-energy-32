@@ -1,0 +1,25 @@
+.result-list__number {
+  font-family: $accent-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-title-color;
+  text-transform: uppercase;
+}
+
+.result-list__item--money .result-list__number {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.result-list__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.result-list__item--money .result-list__description {
+  font-family: $accent-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-title-color;
+  text-transform: uppercase;
+}
