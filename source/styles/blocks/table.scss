@@ -1,0 +1,11 @@
+.table {
+  line-height: 14px;
+}
+
+.table__name {
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-accent-color;
+  text-transform: uppercase;
+}
