@@ -1,10 +1,32 @@
 .hero {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
   color: $text-main-light-color;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../../images/decor/bg-hero-mobile@1x.jpg");
+
+  @media (min-resolution: 2x) {
+    background-image: url("../../images/decor/bg-hero-mobile@2x.jpg");
+  }
+}
+
+.hero__title {
+  margin-bottom: 25px;
 }
 
 .hero__text {
+  margin-bottom: 29px;
+
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.hero__img {
+  margin-bottom: 3px;
 }
 
 .hero__link {

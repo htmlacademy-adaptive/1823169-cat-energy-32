@@ -1,0 +1,27 @@
+.how-work {
+  padding-bottom: 49px;
+}
+
+.how-work__list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.how-work__item {
+  position: relative;
+  align-self: center;
+
+  padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+
+    background-color: $accent-main-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

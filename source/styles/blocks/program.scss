@@ -1,13 +1,26 @@
 .program {
+  padding: 20px;
+
   background-color: #f2f2f2;
 }
 
 .program__title {
+  padding-top: 10px;
+  padding-left: 70px;
+  margin-bottom: 29px;
+
   font-family: $accent-font;
   font-size: 24px;
   line-height: 37px;
   color: $text-title-color;
   text-transform: uppercase;
+}
+
+.program__text {
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program__link {
