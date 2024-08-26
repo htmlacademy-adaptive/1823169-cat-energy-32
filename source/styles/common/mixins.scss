@@ -19,6 +19,8 @@
 @mixin button-style {
   @include button-reset;
 
+  padding: 10px;
+
   font-family: $accent-font;
   font-size: 16px;
   line-height: 20px;
@@ -27,4 +29,10 @@
 
   background-color: $button-primary-bg-color;
   cursor: pointer;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

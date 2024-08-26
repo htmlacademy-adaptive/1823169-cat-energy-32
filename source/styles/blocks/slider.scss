@@ -1,0 +1,19 @@
+.slider {
+  position: relative;
+  display: flex;
+}
+
+.slider__slide--after {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+
+.slider__control {
+  @include button-reset;
+
+  z-index: 2;
+  align-self: center;
+
+  cursor: pointer;
+}

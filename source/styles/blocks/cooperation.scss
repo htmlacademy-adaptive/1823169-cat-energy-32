@@ -1,3 +1,9 @@
+.cooperation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 .cooperation__text {
   font-family: $accent-font;
   font-size: 16px;

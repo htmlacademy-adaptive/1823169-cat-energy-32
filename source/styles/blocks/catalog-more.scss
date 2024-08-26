@@ -1,4 +1,16 @@
+.catalog-more {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .catalog-more__title {
+  padding-top: 53px;
+  margin-bottom: 8px;
+
   font-family: $accent-font;
   font-size: 16px;
   line-height: 20px;
@@ -7,6 +19,14 @@
 }
 
 .catalog-more__text {
+  margin-bottom: 21px;
+
   font-size: 12px;
   line-height: 16px;
+}
+
+.catalog-more__button {
+  color: $button-secondary-text-color;
+
+  background-color: $button-secondary-bg-color;
 }

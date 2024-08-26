@@ -1,3 +1,66 @@
 .example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
   background-color: $section-bg-dark-color;
+}
+
+.example__text {
+  margin-bottom: 20px;
+}
+
+.example__result-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  min-width: 124px;
+  min-height: 70px;
+}
+
+.example__item--money {
+  min-width: 190px;
+  min-height: auto;
+}
+
+.example__number {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $accent-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-title-color;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.example__item--money .example__number {
+  font-size: 14px;
+  line-height: 20px;
+
+  border: none;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__item--money .example__description {
+  font-family: $accent-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-title-color;
+  text-transform: uppercase;
 }
