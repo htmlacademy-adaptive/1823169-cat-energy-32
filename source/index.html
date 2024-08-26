@@ -98,20 +98,24 @@
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content/cat-after-tablet@1x.png 1x, images/content/cat-after-tablet@2x.png 2x">
             <img class="slider__slide" src="images/content/cat-after-mobile@1x.png" srcset="images/content/cat-after-mobile@2x.png" width="280" height="256" alt="Кот Борис после похудения">
           </picture>
-          <svg class="slider__control" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="18" width="4" height="257.02" rx="2" fill="#666666"/>
-            <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
-            <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
-            <path d="M16 120L8 129L16 138V120Z" fill="#666666"/>
-            <path d="M32 129L24 120V138L32 129Z" fill="#666666"/>
-          </svg>
+          <button class="slider__control">
+            <span class="visually-hidden">Посмотреть, как менялся кот.</span>
+            <picture>
+              <source width="4" height="512" type="image/svg+xml" media="(min-width: 768px)" srcset="images/content/slider-button-tablet.svg">
+              <img src="images/content/slider-button-mobile.svg" width="4" height="256" alt="Кнопка слайдера">
+            </picture>
+          </button>
         </div>
       </section>
       <section class="cooperation section">
         <h2 class="cooperation__title section__title visually-hidden">Сотрудничество</h2>
         <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="cooperation__map" src="images/content/map-mobile.jpg" width="320" height="362" alt="Карта с указанием местонахождения магазина">
+        <picture>
+          <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/content/map@1x.jpg 1x, images/content/map@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/content/map-tablet@1x.jpg 1x, images/content/map-tablet@2x.jpg 2x">
+          <img class="cooperation__map" src="images/content/map-mobile@1x.jpg" srcset="images/content/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с указанием местонахождения магазина">
+        </picture>
       </section>
     </main>
     <footer class="footer">
