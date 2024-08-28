@@ -19,22 +19,29 @@
 }
 
 .example__item {
-  min-width: 124px;
-  min-height: 70px;
+  position: relative;
+  width: calc((100% - 32px) / 2);
 }
 
 .example__item--money {
-  min-width: 190px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  width: 100%;;
   min-height: auto;
+  padding: 0;
 }
 
 .example__number {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  min-height: 70px;
+  padding-top: 14px;
+  padding-bottom: 17px;
 
   font-family: $accent-font;
   font-size: 24px;
@@ -46,21 +53,43 @@
 }
 
 .example__item--money .example__number {
+  padding: 0;
+
   font-size: 14px;
   line-height: 20px;
+  white-space: nowrap;
 
   border: none;
 }
 
 .example__description {
+  z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+
+  width: 77px;
+  margin: 0 auto;
+
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+
+  background-color: $section-bg-dark-color;
 }
 
 .example__item--money .example__description {
+  position: static;
+
+  align-self: center;
+  width: auto;
+  margin: 0;
+
   font-family: $accent-font;
   font-size: 14px;
   line-height: 20px;
   color: $text-title-color;
   text-transform: uppercase;
+  white-space: nowrap;
 }

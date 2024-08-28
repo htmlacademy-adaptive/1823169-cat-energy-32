@@ -1,10 +1,41 @@
 .program {
+  position: relative;
+
   padding: 20px;
 
   background-color: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.program--weight-down::before {
+  top: 21px;
+  left: 20px;
+  width: 50px;
+  height: 53px;
+
+  background-image: url("../../icons/stack.svg#weight-down");
+}
+
+.program--weight-up::before {
+  top: 24px;
+  left: 13px;
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../../icons/stack.svg#weight-up");
+
 }
 
 .program__title {
+  margin: 0;
+
   padding-top: 10px;
   padding-left: 70px;
   margin-bottom: 29px;
@@ -24,9 +55,29 @@
 }
 
 .program__link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 134px;
+
   font-family: $accent-font;
   font-size: 16px;
   line-height: 16px;
   color: $text-nav-color;
   text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+
+    width: 32px;
+    height: 10px;
+
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("../../icons/stack.svg#arrow");
+  }
 }
