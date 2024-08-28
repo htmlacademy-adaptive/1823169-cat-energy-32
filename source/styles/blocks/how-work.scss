@@ -3,6 +3,8 @@
 }
 
 .how-work__list {
+  @include list-reset;
+
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -10,13 +12,17 @@
 
 .how-work__item {
   position: relative;
-  align-self: center;
 
+  display: flex;
+  align-items: center;
+
+  min-height: 60px;
   padding-left: 80px;
 
   &::before {
     position: absolute;
     content: "";
+    left: 0;
     width: 60px;
     height: 60px;
 
@@ -24,4 +30,24 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.how-work__item--1::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.how-work__item--2::before {
+  background-size: 26px 29px;
+  background-image: url("../../icons/stack.svg#icon-powder");
+}
+
+.how-work__item--3::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon-eat");
+}
+
+.how-work__item--4::before {
+  background-size: 26px 31px;
+  background-image: url("../../icons/stack.svg#icon-watch");
 }

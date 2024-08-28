@@ -1,9 +1,7 @@
-.hero {
+.hero__container {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-
-  color: $text-main-light-color;
 
   background-repeat: no-repeat;
   background-position: top center;
@@ -16,13 +14,18 @@
 
 .hero__title {
   margin-bottom: 25px;
+
+  color: $text-main-light-color;
+  text-align: center;
 }
 
 .hero__text {
   margin-bottom: 29px;
 
   line-height: 14px;
+  color: $text-main-light-color;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero__img {
