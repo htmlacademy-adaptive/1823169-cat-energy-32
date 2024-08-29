@@ -17,19 +17,49 @@
 .header__menu-toggle {
   @include button-reset;
 
+  position: relative;
+
   width: 24px;
   height: 24px;
+  padding: 4px 0;
+}
 
-  background-color: #000000;
+.line {
+  position: absolute;
+  left: 0;
+
+  display: block;
+
+  width: 24px;
+  height: 2px;
+  background-color: $text-nav-color;
+  transition: transform 0.3s ease-in-out;
+}
+
+.line--1 {
+  top: 4px;
+}
+
+.line--2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line--3 {
+  bottom: 4px;
 }
 
 .header__nav {
   display: none;
-}
 
-.header__menu-toggle:hover + .header__nav {
-  z-index: 1;
-  top: 66px;
+  &--shown {
+    z-index: 1;
+    position: absolute;
+    top: 64px;
+
+    display: block;
+    width: 100%;
+  }
 }
 
 .header__logo .logo__name {
