@@ -1,4 +1,6 @@
 .section__title {
+  @include title-reset;
+
   margin-bottom: 40px;
 
   font-family: $accent-font;

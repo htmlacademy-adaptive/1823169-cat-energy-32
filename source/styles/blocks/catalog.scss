@@ -1,5 +1,9 @@
 .catalog__content {
+  @include list-reset;
+
   display: grid;
   grid-template-columns: fr;
   grid-auto-columns: 1fr;
+
+  margin-bottom: 25px;
 }
