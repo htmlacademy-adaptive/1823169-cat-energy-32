@@ -1,11 +1,51 @@
 .table {
+  width: 100%;
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name name" "quantity price" "button button";
+  row-gap: 14px;
+
+  padding-top: 12px;
+  padding-bottom: 19px;
+
   line-height: 14px;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.table__row:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .table__name {
+  grid-area: name;
+
   font-family: $accent-font;
   font-size: 16px;
   line-height: 16px;
   color: $text-accent-color;
   text-transform: uppercase;
+}
+
+.table__quantity {
+  grid-area: quantity;
+}
+
+.table__price {
+  grid-area: price;
+  justify-self: end;
+}
+
+.table__button {
+  grid-area: button;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.table__button .button {
+  display: block;
 }

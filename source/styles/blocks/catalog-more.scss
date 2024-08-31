@@ -5,11 +5,20 @@
 
   padding-top: 25px;
   padding-bottom: 25px;
+
+  background-repeat: no-repeat;
+  background-position: top 25px center;
+  background-size: 30px 30px;
+  background-image: url("../../icons/stack.svg#plus");
+
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .catalog-more__title {
+  @include title-reset;
+
   padding-top: 53px;
-  margin-bottom: 8px;
 
   font-family: $accent-font;
   font-size: 16px;

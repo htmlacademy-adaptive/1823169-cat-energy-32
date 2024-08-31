@@ -1,5 +1,24 @@
 .other-products__gift {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  min-height: 290px;
+  padding: 20px;
   font-size: 16px;
   line-height: 20px;
   color: $text-main-light-color;
+
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  background-position: top 59px center;
+  background-size: 78px 80px;
+  background-image: url("../../icons/stack.svg#gift");
+}
+
+.other-products__gift p {
+  max-width: 161px;
+  padding-bottom: 23px;
+
+  text-align: center;
 }

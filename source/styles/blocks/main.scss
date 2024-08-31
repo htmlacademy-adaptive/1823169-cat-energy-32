@@ -1,7 +1,9 @@
 .main__title {
+  @include title-reset;
+
+  margin-bottom: 40px;
+
   font-size: 36px;
   line-height: 36px;
   color: $text-title-color;
-
-  margin-bottom: 40px;
 }

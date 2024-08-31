@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "img content" "button button";
-  grid-auto-columns: 1fr 1fr;
+  row-gap: 17px;
 
   padding-top: 20px;
   padding-bottom: 25px;
@@ -12,6 +12,7 @@
 
 .product-card__img {
   grid-area: img;
+  place-self: center;
 }
 
 .product-card__content {
@@ -19,7 +20,9 @@
 }
 
 .product-card__title {
-  max-width: 80px;
+  @include title-reset;
+
+  max-width: 100px;
   margin-bottom: 14px;
 
   font-size: 16px;
@@ -28,15 +31,28 @@
   text-transform: uppercase;
 }
 
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__characteristics {
+  @include list-reset;
+}
+
 .product-card__item {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 
   font-size: 12px;
   line-height: 16px;
 }
 
+.product-card__description {
+  margin: 0;
+}
+
 .product-card__button {
   grid-area: button;
+  text-align: center;
 }
