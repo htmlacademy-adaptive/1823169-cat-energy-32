@@ -3,6 +3,11 @@
 
   display: flex;
   flex-flow: column wrap;
+
+  @media (min-width: $tablet) {
+    flex-flow: row wrap;
+    gap: 33px;
+  }
 }
 
 .nav__item {
@@ -11,6 +16,12 @@
 
   text-align: center;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    padding: 0;
+    border: none;
+  }
 }
 
 .nav__link {

@@ -1,9 +1,26 @@
 .copyright {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+
+  min-height: 34px;
 
   text-decoration: none;
   color: inherit;
+}
+
+.copyright::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: right center;
+  mask-image: url("../../icons/stack.svg#logo-academy");
+}
+
+.copyright__name {
+  display: block;
+  align-self: center;
 }

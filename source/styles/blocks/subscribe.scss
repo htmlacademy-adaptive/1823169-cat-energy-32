@@ -1,12 +1,34 @@
+.subscribe {
+  padding-bottom: 40px;
+}
+
+.subscribe__title {
+  margin-bottom: 32px;
+}
+
 .subscribe__text {
   font-family: $accent-font;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .subscribe__input {
+  padding: 13px;
+
   font-family: $accent-font;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.subscribe__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

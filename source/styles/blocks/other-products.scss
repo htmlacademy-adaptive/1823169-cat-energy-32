@@ -1,4 +1,16 @@
+.other-products {
+  margin-bottom: 40px;
+}
+
+.other-products__title {
+  margin-bottom: 36px;
+}
+
 .other-products__gift {
+  @include background-decor;
+
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: end;
@@ -9,11 +21,14 @@
   line-height: 20px;
   color: $text-main-light-color;
 
-  background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   background-position: top 59px center;
   background-size: 78px 80px;
   background-image: url("../../icons/stack.svg#gift");
+}
+
+.other-products__gift::before {
+  background-image: url("../../images/decor/gift-bg-mobile@1x.jpg");
 }
 
 .other-products__gift p {

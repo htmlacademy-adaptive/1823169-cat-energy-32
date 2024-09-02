@@ -38,10 +38,25 @@
   content: "";
   top: 0;
   bottom: 0;
-  left: -15px;
+  left: -18px;
   width: 40px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #ffffff;
+  border-radius: 100vh;
+  margin: auto 0;
+}
+
+.slider__control::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: -18px;
+  width: 40px;
+  height: 40px;
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-image: url("../../icons/stack.svg#slider-button");
   margin: auto 0;
 }
