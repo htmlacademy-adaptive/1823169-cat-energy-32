@@ -1,6 +1,7 @@
 .program {
   position: relative;
 
+  width: 100%;
   padding: 20px;
 
   background-color: #f2f2f2;
@@ -12,6 +13,10 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: $tablet) {
+    padding: 77px 63px 53px 52px;
+  }
 }
 
 .program--weight-down::before {
@@ -21,6 +26,13 @@
   height: 53px;
 
   background-image: url("../../icons/stack.svg#weight-down");
+
+  @media (min-width: $tablet) {
+    top: 81px;
+    left: 445px;
+    width: 200px;
+    height: 211px;
+  }
 }
 
 .program--weight-up::before {
@@ -30,6 +42,13 @@
   height: 50px;
 
   background-image: url("../../icons/stack.svg#weight-up");
+
+  @media (min-width: $tablet) {
+    top: 91px;
+    left: 411px;
+    width: 268px;
+    height: 200px;
+  }
 }
 
 .program__title {
@@ -44,13 +63,29 @@
   line-height: 37px;
   color: $text-title-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 350px;
+    padding: 0;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__text {
+  margin: 0;
   padding-bottom: 23px;
   margin-bottom: 15px;
 
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    max-width: 340px;
+    margin-bottom: 25px;
+    border-bottom: none;
+  }
 }
 
 .program__link {

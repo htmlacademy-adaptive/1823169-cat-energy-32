@@ -1,3 +1,13 @@
+.programs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+}
+
 .programs__list {
   @include list-reset;
 
@@ -5,6 +15,7 @@
   flex-wrap: wrap;
   gap: 20px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
 }

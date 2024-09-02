@@ -6,4 +6,8 @@
 
 .logo__img {
   margin-right: 56px;
+
+  @media (min-width: $tablet) {
+    margin-right: 13px;
+  }
 }
