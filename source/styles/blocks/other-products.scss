@@ -3,7 +3,11 @@
 }
 
 .other-products__title {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
+}
+
+.other-products-table {
+  margin-bottom: 33px;
 }
 
 .other-products__gift {
@@ -14,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: end;
-
   min-height: 290px;
   padding: 20px;
+
   font-size: 16px;
   line-height: 20px;
   color: $text-main-light-color;
@@ -25,15 +29,40 @@
   background-position: top 59px center;
   background-size: 78px 80px;
   background-image: url("../../icons/stack.svg#gift");
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+    align-items: center;
+    min-height: 200px;
+    padding-right: 125px;
+
+    background-position: top 57px left 77px;
+  }
 }
 
 .other-products__gift::before {
   background-image: url("../../images/decor/gift-bg-mobile@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/decor/gift-bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../../images/decor/gift-bg-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/decor/gift-bg-tablet@2x.jpg");
+    }
+  }
 }
 
 .other-products__gift p {
   max-width: 161px;
-  padding-bottom: 23px;
+  padding-bottom: 6px;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }

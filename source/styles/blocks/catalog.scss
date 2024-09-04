@@ -1,9 +1,18 @@
+.catalog {
+  padding-top: 26px;
+}
+
 .catalog__content {
   @include list-reset;
 
   display: grid;
-  grid-template-columns: fr;
+  grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
+  margin-bottom: 23px;
 
-  margin-bottom: 25px;
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }

@@ -6,9 +6,13 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-
+  column-gap: 15px;
   padding-top: 26px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 40px;
+  }
 }
 
 .cooperation__text {
@@ -19,11 +23,25 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 165px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__address {
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 160px;
+    text-align: end;
+  }
 }
 
 .cooperation__map {

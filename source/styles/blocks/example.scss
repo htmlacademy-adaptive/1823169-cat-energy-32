@@ -3,10 +3,27 @@
   padding-bottom: 40px;
 
   background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+
+    background-color: $section-bg-light-color;
+  }
+}
+
+.example__title {
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__result-list {
@@ -14,23 +31,39 @@
 
   display: flex;
   flex-wrap: wrap;
-  column-gap: 32px;
-  margin-bottom: 20px;
+  gap: 32px 15px;
+
+  @media (min-width: $tablet) {
+    column-gap: 43px;
+    margin-bottom: 99px;
+  }
 }
 
 .example__item {
   position: relative;
+
   width: calc((100% - 32px) / 2);
+
+  @media (min-width: $tablet) {
+    max-width: 162px;
+  }
 }
 
 .example__item--money {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-
   width: 100%;
   min-height: auto;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: column-reverse;
+    align-self: flex-end;
+    gap: 9px;
+    max-width: 175px;
+    margin-left: auto;
+  }
 }
 
 .example__number {
@@ -38,9 +71,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-  min-height: 70px;
-  padding-top: 14px;
+  min-height: 56px;
+  padding-top: 15px;
   padding-bottom: 17px;
 
   font-family: $accent-font;
@@ -50,9 +82,18 @@
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    min-height: 77px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item--money .example__number {
+  justify-content: end;
+  align-items: center;
   padding: 0;
 
   font-size: 14px;
@@ -60,14 +101,19 @@
   white-space: nowrap;
 
   border: none;
+
+  @media (min-width: $tablet) {
+    align-items: start;
+    font-size: 20px;
+  }
 }
 
 .example__description {
-  z-index: 1;
   position: absolute;
-  bottom: -10px;
   right: 0;
+  bottom: -13px;
   left: 0;
+  z-index: 1;
 
   width: 77px;
   margin: 0 auto;
@@ -77,6 +123,16 @@
   text-align: center;
 
   background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    bottom: 15px;
+    width: 130px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $section-bg-light-color;
+  }
 }
 
 .example__item--money .example__description {
@@ -92,9 +148,19 @@
   color: $text-title-color;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (min-width: $tablet) {
+    align-self: flex-end;
+
+    font-size: 20px;
+  }
 }
 
 .example__slider {
   max-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 560px;
+  }
 }

@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 77px 63px 53px 52px;
+    padding: 75px 63px 58px 52px;
   }
 }
 
@@ -28,10 +28,10 @@
   background-image: url("../../icons/stack.svg#weight-down");
 
   @media (min-width: $tablet) {
-    top: 81px;
+    top: 77px;
     left: 445px;
     width: 200px;
-    height: 211px;
+    height: 209px;
   }
 }
 
@@ -75,15 +75,16 @@
 }
 
 .program__text {
+  padding-bottom: 25px;
   margin: 0;
-  padding-bottom: 23px;
   margin-bottom: 15px;
 
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
     max-width: 340px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+
     border-bottom: none;
   }
 }
@@ -101,6 +102,12 @@
   color: $text-nav-color;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 165px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
     position: absolute;

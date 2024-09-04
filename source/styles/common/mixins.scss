@@ -30,6 +30,18 @@
 
   background-color: $button-primary-bg-color;
   cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $button-primary-bg-color-interactive;
+  }
+
+  &:active {
+    color: rgba($button-primary-text-color, 0.3);
+    background-color: $button-primary-bg-color-interactive;
+  }
 }
 
 @mixin list-reset {
@@ -47,26 +59,30 @@
 
 @mixin background-decor {
   &::before {
-    content: "";
     position: absolute;
-    z-index: -2;
+    content: "";
     top: 0;
     left: 0;
+    z-index: -2;
+
     width: 100%;
     height: 100%;
+
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
   }
 
   &::after {
-    content: "";
     position: absolute;
-    z-index: -1;
+    content: "";
     top: 0;
     left: 0;
+    z-index: -1;
+
     width: 100%;
     height: 100%;
-    background-color: rgba(104, 183, 56, 0.85);
+
+    background-color: rgba($accent-main-color, 0.85);
   }
 }

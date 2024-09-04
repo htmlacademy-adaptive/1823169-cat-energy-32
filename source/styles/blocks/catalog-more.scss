@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -10,7 +9,6 @@
   background-position: top 25px center;
   background-size: 30px 30px;
   background-image: url("../../icons/stack.svg#plus");
-
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 }
@@ -18,6 +16,7 @@
 .catalog-more__title {
   @include title-reset;
 
+  margin-bottom: 8px;
   padding-top: 53px;
 
   font-family: $accent-font;
@@ -28,14 +27,25 @@
 }
 
 .catalog-more__text {
-  margin-bottom: 21px;
+  margin: 0;
+  margin-bottom: 22px;
 
   font-size: 12px;
   line-height: 16px;
 }
 
 .catalog-more__button {
+  min-width: 100%;
+
   color: $button-secondary-text-color;
 
   background-color: $button-secondary-bg-color;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: $button-secondary-text-color;
+
+    background-color: $button-secondary-bg-color-interactive;
+  }
 }

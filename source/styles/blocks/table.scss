@@ -6,10 +6,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "name name" "quantity price" "button button";
-  row-gap: 14px;
-
-  padding-top: 12px;
-  padding-bottom: 19px;
+  row-gap: 10px;
+  padding-top: 11px;
+  padding-bottom: 8px;
 
   line-height: 14px;
 
@@ -41,8 +40,7 @@
 
 .table__button {
   grid-area: button;
-
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 

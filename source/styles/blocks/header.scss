@@ -3,7 +3,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-
   padding-top: 14px;
   padding-bottom: 14px;
 
@@ -45,10 +44,10 @@
   display: none;
 
   &--shown {
-    z-index: 1;
     position: absolute;
     top: 64px;
     left: 0;
+    z-index: 1;
 
     display: block;
     width: 100%;
@@ -66,10 +65,11 @@
   left: 0;
 
   display: block;
-
   width: 24px;
   height: 2px;
+
   background-color: $text-nav-color;
+
   transition: transform 0.3s ease-in-out;
 }
 

@@ -4,17 +4,28 @@
 
 .slider__slide--before {
   position: absolute;
-  z-index: 1;
   inset: 0;
+  z-index: 1;
+
   width: 50%;
   height: 100%;
   overflow: hidden;
+
   background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    background-color: $section-bg-light-color;
+  }
 }
 
 .slider__slide--after {
   position: relative;
+
   background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    background-color: $section-bg-light-color;
+  }
 }
 
 .slider__slide img {
@@ -24,13 +35,26 @@
 .slider__control {
   @include button-reset;
 
-  z-index: 2;
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 2;
+
   width: 4px;
   height: 100%;
+
   background-color: #666666;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $button-primary-bg-color;
+  }
+
+  &:active {
+    background-color: $button-primary-bg-color-interactive;
+  }
 }
 
 .slider__control::before {
@@ -39,11 +63,13 @@
   top: 0;
   bottom: 0;
   left: -18px;
+
   width: 40px;
   height: 40px;
+  margin: auto 0;
+
   background-color: #ffffff;
   border-radius: 100vh;
-  margin: auto 0;
 }
 
 .slider__control::after {
@@ -52,11 +78,24 @@
   top: 0;
   bottom: 0;
   left: -18px;
+
   width: 40px;
   height: 40px;
+  margin: auto 0;
+
   background-color: #666666;
   mask-repeat: no-repeat;
   mask-position: center;
   mask-image: url("../../icons/stack.svg#slider-button");
-  margin: auto 0;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $button-primary-bg-color;
+  }
+
+  &:active {
+    background-color: $button-primary-bg-color-interactive;
+  }
 }

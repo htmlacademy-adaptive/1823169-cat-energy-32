@@ -1,8 +1,13 @@
 .footer {
-  padding-top: 40px;
+  padding-top: 43px;
   padding-bottom: 40px;
 
   background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .footer__container {
@@ -10,6 +15,11 @@
   flex-flow: column nowrap;
   align-items: center;
   row-gap: 20px;
+
+  @media (min-width: $tablet) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo .logo__name {
@@ -22,8 +32,19 @@
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    border: none;
+  }
 }
 
 .footer__copyright {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    min-width: 168px;
+  }
 }

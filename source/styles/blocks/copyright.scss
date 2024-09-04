@@ -1,23 +1,41 @@
 .copyright {
   position: relative;
-  display: flex;
 
+  display: flex;
   min-height: 34px;
 
   text-decoration: none;
   color: inherit;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright::before {
-  content: "";
   position: absolute;
+  content: "";
   right: 0;
   width: 27px;
   height: 34px;
+
   background-color: #666666;
   mask-repeat: no-repeat;
   mask-position: right center;
   mask-image: url("../../icons/stack.svg#logo-academy");
+
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
