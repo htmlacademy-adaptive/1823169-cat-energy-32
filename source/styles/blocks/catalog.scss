@@ -1,5 +1,10 @@
 .catalog {
   padding-top: 26px;
+
+  @media (min-width: $tablet) {
+    padding-top: 37px;
+    padding-bottom: 50px;
+  }
 }
 
 .catalog__content {

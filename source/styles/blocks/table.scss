@@ -1,5 +1,10 @@
 .table {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
 }
 
 .table__row {
@@ -13,6 +18,13 @@
   line-height: 14px;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: auto 200px 96px;
+    grid-template-areas: "name quantity price" "button button button";
+    row-gap: 17px;
+    padding: 25px 31px 19px 38px;
+  }
 }
 
 .table__row:last-child {
@@ -27,15 +39,26 @@
   line-height: 16px;
   color: $text-accent-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .table__quantity {
   grid-area: quantity;
+  align-self: center;
+
+  @media (min-width: $tablet) {
+    justify-self: end;
+  }
 }
 
 .table__price {
   grid-area: price;
-  justify-self: end;
+  place-self: center end;
+  padding-right: 4px;
 }
 
 .table__button {

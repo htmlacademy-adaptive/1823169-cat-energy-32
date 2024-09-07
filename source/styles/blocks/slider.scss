@@ -14,7 +14,7 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background-color: $section-bg-light-color;
+    background: linear-gradient(to bottom, $section-bg-light-color 29%, $section-bg-dark-color 29%);
   }
 }
 
@@ -24,7 +24,7 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background-color: $section-bg-light-color;
+    background: linear-gradient(to bottom, $section-bg-light-color 29%, $section-bg-dark-color 29%);
   }
 }
 

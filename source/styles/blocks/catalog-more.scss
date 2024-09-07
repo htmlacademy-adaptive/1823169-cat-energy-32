@@ -1,16 +1,35 @@
 .catalog-more {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
   background-repeat: no-repeat;
   background-position: top 25px center;
   background-size: 30px 30px;
   background-image: url("../../icons/stack.svg#plus");
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet) {
+    background-position: top 130px center;
+    background-size: 60px 60px;
+    border: none;
+  }
+}
+
+.catalog-more__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    align-self: flex-end;
+    justify-content: end;
+    height: 84%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #ebebeb;
+  }
 }
 
 .catalog-more__title {
@@ -23,7 +42,15 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 170px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog-more__text {
@@ -32,14 +59,28 @@
 
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    max-width: 170px;
+    margin-bottom: 82px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog-more__button {
-  min-width: 100%;
+  width: 100%;
 
   color: $button-secondary-text-color;
 
   background-color: $button-secondary-bg-color;
+
+  @media (min-width: $tablet) {
+    justify-self: end;
+    max-width: 250px;
+  }
 
   &:hover,
   &:focus-visible,

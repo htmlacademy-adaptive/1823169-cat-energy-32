@@ -17,4 +17,13 @@
 .section__title--catalog {
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 66px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

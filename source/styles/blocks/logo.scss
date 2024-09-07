@@ -23,4 +23,8 @@
   @media (min-width: $tablet) {
     margin-right: 13px;
   }
+
+  @media (min-width: $desktop) {
+    margin-right: 7px;
+  }
 }

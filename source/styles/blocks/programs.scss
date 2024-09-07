@@ -6,6 +6,11 @@
     padding-top: 0;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
 }
 
 .programs__list {
@@ -17,5 +22,10 @@
 
   @media (min-width: $tablet) {
     gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 80px;
+    padding-right: 30px;
   }
 }

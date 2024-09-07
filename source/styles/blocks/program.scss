@@ -17,6 +17,11 @@
   @media (min-width: $tablet) {
     padding: 75px 63px 58px 52px;
   }
+
+  @media (min-width: $desktop) {
+    width: calc((100% - 80px) / 2);
+    padding: 41px 60px 57px 45px;
+  }
 }
 
 .program--weight-down::before {
@@ -33,6 +38,13 @@
     width: 200px;
     height: 209px;
   }
+
+  @media (min-width: $desktop) {
+    top: 39px;
+    left: 46px;
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .program--weight-up::before {
@@ -44,10 +56,17 @@
   background-image: url("../../icons/stack.svg#weight-up");
 
   @media (min-width: $tablet) {
-    top: 91px;
-    left: 411px;
+    top: 89px;
+    left: 416px;
     width: 268px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 47px;
+    left: 33px;
+    width: 134px;
+    height: 100px;
   }
 }
 
@@ -72,6 +91,13 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 400px;
+    padding-top: 36px;
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .program__text {
@@ -86,6 +112,11 @@
     margin-bottom: 27px;
 
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 457px;
+    margin-bottom: 2px;
   }
 }
 

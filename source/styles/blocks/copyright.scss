@@ -28,6 +28,10 @@
 
   transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
+  @media (min-width: $tablet) {
+    right: 20px;
+  }
+
   &:hover,
   &:focus-visible {
     background-color: $accent-main-color;

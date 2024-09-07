@@ -6,9 +6,9 @@
 
   @media (min-width: $tablet) {
     padding-top: 45px;
-    padding-bottom: 101px;
+    padding-bottom: 96px;
 
-    background-color: $section-bg-light-color;
+    background: linear-gradient(to bottom, $section-bg-light-color 57%, $section-bg-dark-color 57%);
   }
 }
 
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet) {
     column-gap: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 63px;
   }
 }
 
@@ -63,6 +63,8 @@
     gap: 9px;
     max-width: 175px;
     margin-left: auto;
+    padding-top: 10px;
+    padding-right: 25px;
   }
 }
 
@@ -84,7 +86,7 @@
   border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet) {
-    min-height: 77px;
+    min-height: 74px;
 
     font-size: 30px;
     line-height: 37px;
@@ -125,7 +127,7 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    bottom: 15px;
+    bottom: 37px;
     width: 130px;
 
     font-size: 14px;
@@ -161,6 +163,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet) {
+    right: 13px;
     max-width: 560px;
   }
 }

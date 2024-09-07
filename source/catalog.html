@@ -53,7 +53,7 @@
     </header>
     <main class="main">
       <section class="catalog section">
-        <div class="container">
+        <div class="container container--catalog">
           <h1 class="catalog__title main__title">Каталог продукции</h1>
           <ul class="catalog__content">
             <li class="catalog__product-card product-card">
@@ -253,15 +253,17 @@
               <a class="product-card__button button" href="#">заказать</a>
             </li>
             <li class="catalog__product-card catalog-more">
-              <h3 class="catalog-more__title">Показать еще 100500 товаров</h3>
-              <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
-              <button class="catalog-more__button button" type="button">показать все</button>
+              <div class="catalog-more__content">
+                <h3 class="catalog-more__title">Показать еще 100500 товаров</h3>
+                <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
+                <button class="catalog-more__button button" type="button">показать все</button>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="other-products section">
-        <div class="container">
+        <div class="container container--catalog">
           <h2 class="other-products__title section__title section__title--catalog">Дополнительные товары</h2>
           <table class="other-products-table table">
             <thead class="visually-hidden">
@@ -315,12 +317,14 @@
       <section class="subscribe section">
         <div class="container">
           <h2 class="subscribe__title section__title section__title--catalog">Акции и новинки</h2>
-          <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-          <form class="subscribe__form" method="post" action="https://echo.htmlacademy.ru/">
-            <label class="subscribe__label visually-hidden" for="email">Введите Ваш e-mail</label>
-            <input class="subscribe__input" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
-            <button class="subscribe__button button" type="submit">Подписаться</button>
-          </form>
+          <div class="subscribe__content">
+            <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+            <form class="subscribe__form" method="post" action="https://echo.htmlacademy.ru/">
+              <label class="subscribe__label visually-hidden" for="email">Введите Ваш e-mail</label>
+              <input class="subscribe__input" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
+              <button class="subscribe__button button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="cooperation cooperation--catalog section">
@@ -332,7 +336,7 @@
           </div>
         </div>
         <picture>
-          <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/content/map@1x.jpg 1x, images/content/map@2x.jpg 2x">
+          <source width="1440" height="400" type="image/jpg" media="(min-width: 1280px)" srcset="images/content/map@1x.jpg 1x, images/content/map@2x.jpg 2x">
           <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/content/map-tablet@1x.jpg 1x, images/content/map-tablet@2x.jpg 2x">
           <img class="cooperation__map" src="images/content/map-mobile@1x.jpg" srcset="images/content/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с указанием местонахождения магазина">
         </picture>

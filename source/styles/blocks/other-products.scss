@@ -1,13 +1,25 @@
 .other-products {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 80px;
+  }
 }
 
 .other-products__title {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 76px;
+  }
 }
 
 .other-products-table {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 66px;
+  }
 }
 
 .other-products__gift {

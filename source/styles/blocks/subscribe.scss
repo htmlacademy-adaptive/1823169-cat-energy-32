@@ -1,9 +1,23 @@
 .subscribe {
   padding-bottom: 43px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 80px;
+  }
 }
 
 .subscribe__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 66px;
+  }
+}
+
+.subscribe__content {
+  @media (min-width: $tablet) {
+    padding-left: 40px;
+  }
 }
 
 .subscribe__text {
@@ -13,12 +27,26 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 21px;
+    max-width: 632px;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .subscribe__form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 17px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 3fr 2fr;
+    gap: 0;
+    max-width: 632px;
+  }
 }
 
 .subscribe__input {
@@ -29,22 +57,27 @@
   line-height: 30px;
   text-transform: uppercase;
 
-  border: none;
-  outline: 1px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
 
-  transition: outline 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 
   &:hover,
   &:focus-visible {
-    outline: 2px solid #444444;
+    border: 2px solid #444444;
   }
 
-  &:invalid {
-    outline: 2px solid #ff8282;
-  }
+  /* &:invalid {
+    border: 2px solid #ff8282;
+  } */
 }
 
 .subscribe__button {
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    height: auto;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
