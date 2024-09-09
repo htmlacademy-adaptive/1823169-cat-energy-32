@@ -1,8 +1,14 @@
 .other-products {
+  @include section-head-decor;
+
   padding-bottom: 40px;
 
   @media (min-width: $tablet) {
     padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 95px;
   }
 }
 
@@ -14,45 +20,46 @@
   }
 }
 
-.other-products-table {
+.other-products__content {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: auto 245px;
+    column-gap: 80px;
+  }
+}
+
+.other-products__table {
   margin-bottom: 33px;
 
   @media (min-width: $tablet) {
     margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .other-products__gift {
-  @include background-decor;
-
   position: relative;
+  z-index: -2;
 
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
   min-height: 290px;
-  padding: 20px;
+  padding-bottom: 43px;
 
   font-size: 16px;
   line-height: 20px;
   color: $text-main-light-color;
 
+  background-color: $accent-main-color;
   background-repeat: no-repeat;
-  background-position: top 59px center;
-  background-size: 78px 80px;
-  background-image: url("../../icons/stack.svg#gift");
-
-  @media (min-width: $tablet) {
-    justify-content: end;
-    align-items: center;
-    min-height: 200px;
-    padding-right: 125px;
-
-    background-position: top 57px left 77px;
-  }
-}
-
-.other-products__gift::before {
+  background-position: center;
+  background-size: cover;
   background-image: url("../../images/decor/gift-bg-mobile@1x.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -60,21 +67,87 @@
   }
 
   @media (min-width: $tablet) {
+    justify-content: center;
+    align-items: end;
+    min-height: 200px;
+    padding: 10px 125px 10px 0;
+
     background-image: url("../../images/decor/gift-bg-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/decor/gift-bg-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    justify-content: end;
+    min-height: 288px;
+    padding: 42px;
+
+    background-image: url("../../images/decor/gift-bg@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/decor/gift-bg@2x.jpg");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($accent-main-color, 0.85);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 59px;
+    right: 0;
+    left: 0;
+
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-image: url("../../icons/stack.svg#gift");
+
+    @media (min-width: $tablet) {
+      top: 0;
+      bottom: 0;
+      left: 77px;
+      width: 80px;
+      height: 83px;
+      margin: auto 0;
+    }
+
+    @media (min-width: $desktop) {
+      top: 56px;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
 }
 
 .other-products__gift p {
   max-width: 161px;
-  padding-bottom: 6px;
+  margin: 0;
 
   text-align: center;
 
   @media (min-width: $tablet) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }

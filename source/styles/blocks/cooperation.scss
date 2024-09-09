@@ -1,5 +1,21 @@
+.cooperation {
+  @media (min-width: $desktop) {
+    position: relative;
+
+    min-height: 400px;
+
+    background-color: $section-bg-dark-color;
+  }
+}
+
 .cooperation--catalog {
   background-color: $section-bg-dark-color;
+}
+
+.cooperation .container {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
 }
 
 .cooperation__content {
@@ -12,6 +28,22 @@
 
   @media (min-width: $tablet) {
     padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    z-index: 1;
+
+    column-gap: 85px;
+    max-width: 575px;
+    max-height: 200px;
+    padding: 60px 74px;
+
+    background-color: $section-bg-light-color;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 }
 
@@ -44,9 +76,21 @@
 
     text-align: end;
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .cooperation__map {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }

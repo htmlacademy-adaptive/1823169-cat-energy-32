@@ -27,6 +27,8 @@
 }
 
 .nav__link {
+  position: relative;
+
   color: inherit;
   text-decoration: none;
 
@@ -39,5 +41,25 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    &--current::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      left: 0;
+
+      height: 2px;
+
+      background-color: $accent-main-color;
+    }
+  }
+}
+
+.header--index .nav__link--current::after {
+  @media (min-width: $desktop) {
+    background-color: $text-main-light-color;
   }
 }

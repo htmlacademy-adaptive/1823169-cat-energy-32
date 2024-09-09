@@ -14,7 +14,11 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background: linear-gradient(to bottom, $section-bg-light-color 29%, $section-bg-dark-color 29%);
+    background: linear-gradient(to bottom, $section-bg-light-color 145px, $section-bg-dark-color 145px);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(to bottom, $section-bg-light-color 136px, $section-bg-dark-color 136px);
   }
 }
 
@@ -24,7 +28,11 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background: linear-gradient(to bottom, $section-bg-light-color 29%, $section-bg-dark-color 29%);
+    background: linear-gradient(to bottom, $section-bg-light-color 145px, $section-bg-dark-color 145px);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(to bottom, $section-bg-light-color 136px, $section-bg-dark-color 136px);
   }
 }
 
@@ -44,6 +52,7 @@
   height: 100%;
 
   background-color: #666666;
+  cursor: pointer;
 
   transition: background-color 0.3s ease-in-out;
 
@@ -70,6 +79,7 @@
 
   background-color: #ffffff;
   border-radius: 100vh;
+  cursor: pointer;
 }
 
 .slider__control::after {
@@ -87,15 +97,16 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-image: url("../../icons/stack.svg#slider-button");
+  cursor: pointer;
 
   transition: background-color 0.3s ease-in-out;
+}
 
-  &:hover,
-  &:focus-visible {
-    background-color: $button-primary-bg-color;
-  }
+.slider__control:hover::after,
+.slider__control:focus-visible::after {
+  background-color: $button-primary-bg-color;
+}
 
-  &:active {
-    background-color: $button-primary-bg-color-interactive;
-  }
+.slider__control:active::after {
+  background-color: $button-primary-bg-color-interactive;
 }

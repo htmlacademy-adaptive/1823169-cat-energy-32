@@ -9,31 +9,27 @@
 
   transition: opacity 0.3s ease-in-out;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 27px;
+    height: 34px;
 
-.copyright::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  width: 27px;
-  height: 34px;
+    background-color: #666666;
+    mask-repeat: no-repeat;
+    mask-position: right center;
+    mask-image: url("../../icons/stack.svg#logo-academy");
 
-  background-color: #666666;
-  mask-repeat: no-repeat;
-  mask-position: right center;
-  mask-image: url("../../icons/stack.svg#logo-academy");
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
-  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-  @media (min-width: $tablet) {
-    right: 20px;
+    @media (min-width: $tablet) {
+      right: 20px;
+    }
   }
 
-  &:hover,
-  &:focus-visible {
+  &:hover::before,
+  &:focus-visible::before {
     background-color: $accent-main-color;
   }
 

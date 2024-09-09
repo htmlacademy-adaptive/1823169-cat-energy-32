@@ -17,9 +17,14 @@
     padding: 10px 37px 40px;
     min-height: 511px;
 
-    background-color: $section-bg-dark-color;
+    background: linear-gradient(to bottom, $section-bg-light-color 15%, $section-bg-dark-color 15%);
 
     border-top: none;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 245px;
+    padding: 10px 34px 39px 40px;
   }
 }
 
@@ -34,6 +39,11 @@
     min-width: 200px;
     min-height: 210px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -61,6 +71,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .product-card__link {
@@ -72,6 +86,10 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 36px;
   }
 }
 

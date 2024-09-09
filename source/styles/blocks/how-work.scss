@@ -5,6 +5,12 @@
     padding-bottom: 47px;
 
     border-bottom: 1px solid #ebebeb;
+
+    @media (min-width: $desktop) {
+      padding-bottom: 71px;
+
+      border: none;
+    }
   }
 }
 
@@ -23,11 +29,14 @@
 
   @media (min-width: $tablet) {
     flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 36px;
-    padding-right: 95px;
+    gap: 36px 130px;
+    padding-right: 30px;
 
     counter-reset: work;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 36px 70px;
   }
 }
 
@@ -37,13 +46,11 @@
   display: flex;
   align-items: center;
   min-height: 60px;
-  padding-left: 80px;
 
   @media (min-width: $tablet) {
+    align-items: flex-start;
     width: 250px;
     min-height: 280px;
-    padding-top: 96px;
-    padding-left: 0;
 
     counter-increment: work;
   }
@@ -90,6 +97,10 @@
 .how-work__item--1::before {
   background-size: 30px 32px;
   background-image: url("../../icons/stack.svg#icon-leaf");
+
+  @media (min-width: $desktop) {
+    left: -6px;
+  }
 }
 
 .how-work__item--1::after {
@@ -111,4 +122,18 @@
 .how-work__item--4::before {
   background-size: 26px 31px;
   background-image: url("../../icons/stack.svg#icon-watch");
+
+  @media (min-width: $desktop) {
+    left: 6px;
+  }
+}
+
+.how-work__text {
+  margin: 0;
+  padding-left: 80px;
+
+  @media (min-width: $tablet) {
+    padding-top: 151px;
+    padding-left: 0;
+  }
 }
