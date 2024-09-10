@@ -28,3 +28,16 @@
     margin-right: 7px;
   }
 }
+
+.logo__name--footer g {
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo:hover .logo__name--footer g,
+.logo:focus-visible .logo__name--footer g {
+  fill: #3e3e3e;
+}
+
+.logo:active .logo__name--footer g {
+  fill: #666666;
+}
