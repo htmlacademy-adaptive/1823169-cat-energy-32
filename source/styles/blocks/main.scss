@@ -1,0 +1,17 @@
+.main__title {
+  @include title-reset;
+
+  margin-bottom: 40px;
+
+  font-family: $accent-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $text-title-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 87px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

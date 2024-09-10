@@ -1,0 +1,36 @@
+.section__title {
+  @include title-reset;
+
+  margin-bottom: 40px;
+
+  font-family: $accent-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-title-color;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.section__title--catalog {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 66px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

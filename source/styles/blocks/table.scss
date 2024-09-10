@@ -1,0 +1,94 @@
+.table {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+  }
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name name" "quantity price" "button button";
+  row-gap: 10px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+
+  line-height: 14px;
+
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: auto 200px 96px;
+    grid-template-areas: "name quantity price" "button button button";
+    row-gap: 17px;
+    padding: 25px 31px 19px 38px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: auto 243px 82px 244px;
+    grid-template-areas: "name quantity price button";
+    padding: 9px 0 6px;
+  }
+}
+
+.table__row:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.table__name {
+  grid-area: name;
+
+  font-family: $accent-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-accent-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    align-self: center;
+  }
+}
+
+.table__quantity {
+  grid-area: quantity;
+  align-self: center;
+
+  @media (min-width: $tablet) {
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop) {
+    justify-self: start;
+  }
+}
+
+.table__price {
+  grid-area: price;
+  place-self: center end;
+  padding-right: 4px;
+
+  @media (min-width: $desktop) {
+    justify-self: start;
+  }
+}
+
+.table__button {
+  grid-area: button;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.table__button .button {
+  display: block;
+}

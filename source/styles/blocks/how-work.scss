@@ -1,0 +1,139 @@
+.how-work {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 47px;
+
+    border-bottom: 1px solid #ebebeb;
+
+    @media (min-width: $desktop) {
+      padding-bottom: 71px;
+
+      border: none;
+    }
+  }
+}
+
+.how-work__title {
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.how-work__list {
+  @include list-reset;
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    flex-flow: row wrap;
+    gap: 36px 130px;
+    padding-right: 30px;
+
+    counter-reset: work;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 36px 70px;
+  }
+}
+
+.how-work__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+    width: 250px;
+    min-height: 280px;
+
+    counter-increment: work;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    background-color: $accent-main-color;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      left: 0;
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: counter(work);
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      width: 136px;
+      height: 280px;
+
+      font-family: $accent-font;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: right;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.how-work__item--1::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+
+  @media (min-width: $desktop) {
+    left: -6px;
+  }
+}
+
+.how-work__item--1::after {
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+.how-work__item--2::before {
+  background-size: 26px 29px;
+  background-image: url("../../icons/stack.svg#icon-powder");
+}
+
+.how-work__item--3::before {
+  background-size: 25px 30px;
+  background-image: url("../../icons/stack.svg#icon-eat");
+}
+
+.how-work__item--4::before {
+  background-size: 26px 31px;
+  background-image: url("../../icons/stack.svg#icon-watch");
+
+  @media (min-width: $desktop) {
+    left: 6px;
+  }
+}
+
+.how-work__text {
+  margin: 0;
+  padding-left: 80px;
+
+  @media (min-width: $tablet) {
+    padding-top: 151px;
+    padding-left: 0;
+  }
+}

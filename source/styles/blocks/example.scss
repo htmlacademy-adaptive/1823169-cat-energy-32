@@ -1,0 +1,236 @@
+.example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+
+    background: linear-gradient(to bottom, $section-bg-light-color 57%, $section-bg-dark-color 57%);
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    background: linear-gradient(to bottom, $section-bg-light-color 138px, $section-bg-dark-color 138px);
+  }
+}
+
+.example .container {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
+  @media (min-width: $desktop) {
+    max-width: 436px;
+    margin-left: -5px; /* вписаться в РР */
+  }
+}
+
+.example__title {
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 148px;
+  }
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.example__result-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 32px;
+
+  @media (min-width: $tablet) {
+    column-gap: 43px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop) {
+    row-gap: 25px;
+    max-width: 367px;
+    margin-bottom: 0;
+  }
+}
+
+.example__item {
+  width: calc((100% - 32px) / 2);
+
+  @media (min-width: $tablet) {
+    max-width: 162px;
+  }
+}
+
+.example__item--money {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+  min-height: auto;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: column-reverse;
+    align-self: flex-end;
+    gap: 9px;
+    max-width: 175px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    column-gap: 65px;
+
+    max-width: 436px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
+
+.example__number {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 15px 10px 17px;
+
+  font-family: $accent-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-title-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    min-height: 74px;
+    height: auto;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 72px;
+  }
+}
+
+.example__item--money .example__number {
+  justify-content: end;
+  align-items: center;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+
+  border: none;
+
+  @media (min-width: $tablet) {
+    align-items: start;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+  }
+}
+
+.example__description {
+  z-index: 1;
+
+  width: 77px;
+  margin: -10px auto 0;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background-color: $section-bg-dark-color;
+
+  @media (min-width: $tablet) {
+    width: 130px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $section-bg-light-color;
+  }
+
+  @media (min-width: $desktop) {
+    margin: -8px auto 0;
+
+    background-color: $section-bg-dark-color;
+  }
+}
+
+.example__item--money .example__description {
+  position: static;
+
+  align-self: center;
+  width: auto;
+  margin: 0;
+
+  font-family: $accent-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-title-color;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (min-width: $tablet) {
+    align-self: flex-end;
+
+    font-size: 20px;
+
+    @media (min-width: $desktop) {
+      align-self: center;
+    }
+  }
+}
+
+.example__slider {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    right: 13px;
+
+    max-width: 560px;
+    max-height: 512px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 27px;
+    margin: 0;
+  }
+}
