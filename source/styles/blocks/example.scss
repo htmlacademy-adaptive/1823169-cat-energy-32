@@ -8,7 +8,7 @@
     padding-top: 45px;
     padding-bottom: 101px;
 
-    background: linear-gradient(to bottom, $section-bg-light-color 57%, $section-bg-dark-color 57%);
+    background: linear-gradient(to top, $section-bg-dark-color 462px, $section-bg-light-color 462px);
   }
 
   @media (min-width: $desktop) {
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 148px;
+    margin-bottom: 146px;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop) {
-    row-gap: 25px;
+    row-gap: 28px;
     max-width: 367px;
     margin-bottom: 0;
   }

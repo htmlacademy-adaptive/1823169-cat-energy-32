@@ -18,6 +18,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 76px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .other-products__content {

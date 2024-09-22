@@ -9,6 +9,10 @@
     gap: 35px;
     padding-right: 23px;
   }
+
+  @media (min-width: $desktop) {
+    padding-right: 19px;
+  }
 }
 
 .nav__item {
