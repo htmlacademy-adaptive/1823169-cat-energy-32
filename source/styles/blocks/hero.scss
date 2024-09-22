@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop) {
-    background: linear-gradient(to right, $section-bg-light-color 49%, $accent-main-color 49%);
+    background: linear-gradient(to right, $section-bg-light-color 49.1%, $accent-main-color 49.1%);
   }
 }
 
@@ -48,13 +48,16 @@
 
   @media (min-width: $tablet) {
     align-items: start;
+    max-width: 768px;
     min-height: 850px;
+    margin: 0 auto;
     padding-left: 109px;
   }
 
   @media (min-width: $desktop) {
+    max-width: 1440px;
     min-height: 545px;
-    padding-left: 92px;
+    padding-left: 178px;
   }
 }
 
@@ -122,6 +125,10 @@
     line-height: 20px;
     color: $text-title-color;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__img {
@@ -129,12 +136,13 @@
     position: absolute;
     bottom: 0;
     left: 20px;
+
+    width: auto;
     z-index: -1;
 
     @media (min-width: $desktop) {
-      right: 0;
-      bottom: 55px;
-      left: 460px;
+      padding-bottom: 52px;
+      padding-left: 528px;
       z-index: 2;
     }
   }

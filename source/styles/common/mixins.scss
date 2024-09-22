@@ -86,7 +86,9 @@
   }
 
   @media (min-width: $tablet) {
-    top: 21px;
+    &::before {
+      top: 14px;
+    }
 
     &__title {
       margin-left: 0;
@@ -95,6 +97,10 @@
   }
 
   @media (min-width: $desktop) {
+    &::before {
+      top: 15px;
+    }
+
     &__title {
       margin-left: -40px;
     }

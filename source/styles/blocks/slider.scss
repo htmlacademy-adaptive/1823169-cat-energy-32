@@ -14,11 +14,11 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background: linear-gradient(to bottom, $section-bg-light-color 145px, $section-bg-dark-color 145px);
+    background: linear-gradient(to top, $section-bg-dark-color 361px, $section-bg-light-color 361px);
   }
 
   @media (min-width: $desktop) {
-    background: linear-gradient(to bottom, $section-bg-light-color 136px, $section-bg-dark-color 136px);
+    background: linear-gradient(to bottom, $section-bg-light-color 138px, $section-bg-dark-color 138px);
   }
 }
 
@@ -28,11 +28,11 @@
   background-color: $section-bg-dark-color;
 
   @media (min-width: $tablet) {
-    background: linear-gradient(to bottom, $section-bg-light-color 145px, $section-bg-dark-color 145px);
+    background: linear-gradient(to top, $section-bg-dark-color 367px, $section-bg-light-color 367px);
   }
 
   @media (min-width: $desktop) {
-    background: linear-gradient(to bottom, $section-bg-light-color 136px, $section-bg-dark-color 136px);
+    background: linear-gradient(to bottom, $section-bg-light-color 138px, $section-bg-dark-color 138px);
   }
 }
 

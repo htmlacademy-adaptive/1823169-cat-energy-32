@@ -1,20 +1,12 @@
 .program {
-  position: relative;
-
   display: flex;
   flex-flow: column wrap;
   width: 100%;
   padding: 20px;
 
   background-color: #f2f2f2;
-
-  &::before {
-    position: absolute;
-    content: "";
-
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet) {
     padding: 75px 63px 58px 52px;
@@ -22,53 +14,41 @@
 
   @media (min-width: $desktop) {
     width: calc((100% - 80px) / 2);
-    padding: 41px 60px 57px 45px;
+    padding: 41px 60px 57px 49px;
   }
 }
 
-.program--weight-down::before {
-  top: 21px;
-  left: 20px;
-  width: 50px;
-  height: 53px;
-
+.program--weight-down {
+  background-size: 50px 53px;
+  background-position: top 21px left 20px;
   background-image: url("../../icons/stack.svg#weight-down");
 
   @media (min-width: $tablet) {
-    top: 77px;
-    left: 445px;
-    width: 200px;
-    height: 209px;
+    background-size: 200px 209px;
+    background-position: top 77px left 445px;
   }
 
   @media (min-width: $desktop) {
-    top: 39px;
-    left: 46px;
-    width: 100px;
-    height: 106px;
+    background-size: 100px 106px;
+    background-position: top 39px left 50px;
   }
 }
 
-.program--weight-up::before {
-  top: 24px;
-  left: 13px;
-  width: 67px;
-  height: 50px;
-
+.program--weight-up {
+  background-size: 67px 50px;
+  background-position: top 24px left 13px;
   background-image: url("../../icons/stack.svg#weight-up");
 
   @media (min-width: $tablet) {
-    top: 89px;
-    left: 416px;
-    width: 268px;
-    height: 200px;
+    background-size: 268px 200px;
+    background-position: top 89px left 416px;
   }
 
   @media (min-width: $desktop) {
-    top: 47px;
-    left: 33px;
-    width: 134px;
-    height: 100px;
+    padding-left: 54px;
+
+    background-size: 134px 100px;
+    background-position: top 46px left 38px;
   }
 }
 
