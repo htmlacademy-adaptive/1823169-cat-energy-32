@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 125px;
+    padding-bottom: 105px;
   }
 }
 
@@ -31,6 +31,7 @@
 
   @media (min-width: $desktop) {
     padding-left: 0;
+    margin-left: -10px;
   }
 }
 
@@ -96,17 +97,20 @@
   }
 }
 
-.input-error {
+.subscribe__input--error {
   outline: 2px solid #ff8282;
 }
 
 .subscribe__button {
-  padding-top: 16px;
+  padding-top: 18px;
   padding-bottom: 16px;
+
+  font-size: 20px;
 
   @media (min-width: $tablet) {
     height: auto;
-    font-size: 20px;
+    padding-top: 16px;
+
     line-height: 26px;
   }
 

@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop) {
-    gap: 36px 70px;
+    gap: 36px 73px;
   }
 }
 
@@ -45,6 +45,7 @@
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 60px;
 
   @media (min-width: $tablet) {
@@ -97,10 +98,6 @@
 .how-work__item--1::before {
   background-size: 30px 32px;
   background-image: url("../../icons/stack.svg#icon-leaf");
-
-  @media (min-width: $desktop) {
-    left: -6px;
-  }
 }
 
 .how-work__item--1::after {
@@ -135,5 +132,11 @@
   @media (min-width: $tablet) {
     padding-top: 151px;
     padding-left: 0;
+  }
+}
+
+.how-work__text:not(:first-child) {
+  @media (min-width: $tablet) {
+    padding-top: 20px;
   }
 }

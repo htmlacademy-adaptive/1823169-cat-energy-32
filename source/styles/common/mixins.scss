@@ -19,6 +19,8 @@
 @mixin button-style {
   @include button-reset;
 
+  display: block;
+
   padding: 10px;
 
   font-family: $accent-font;

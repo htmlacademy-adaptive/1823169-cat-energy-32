@@ -15,6 +15,12 @@
   }
 }
 
+.nav__list--catalog {
+  @media (min-width: $desktop) {
+    padding-right: 29px;
+  }
+}
+
 .nav__item {
   width: 100%;
   padding: 22px;
@@ -62,7 +68,7 @@
   }
 }
 
-.header--index .nav__link--current::after {
+.nav__list--index .nav__link--current::after {
   @media (min-width: $desktop) {
     background-color: $text-main-light-color;
   }

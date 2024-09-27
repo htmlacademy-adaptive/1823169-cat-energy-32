@@ -1,0 +1,40 @@
+.line {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  width: 24px;
+  height: 2px;
+
+  background-color: $text-nav-color;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.line--1 {
+  top: 4px;
+}
+
+.line--2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line--3 {
+  bottom: 4px;
+}
+
+.line--active.line--1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.line--active.line--2 {
+  opacity: 0;
+}
+
+.line--active.line--3 {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%) rotate(-45deg);
+}

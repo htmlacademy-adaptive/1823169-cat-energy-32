@@ -25,15 +25,30 @@
   }
 }
 
-.logo__name--footer g {
+.logo__name--header {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__name--footer {
+  width: 128px;
+  height: 24px;
+}
+
+.logo__svg {
   transition: fill 0.3s ease-in-out;
 }
 
-.logo:hover .logo__name--footer g,
-.logo:focus-visible .logo__name--footer g {
+.logo:hover .logo__svg,
+.logo:focus-visible .logo__svg {
   fill: #3e3e3e;
 }
 
-.logo:active .logo__name--footer g {
+.logo:active .logo__svg {
   fill: #666666;
 }
