@@ -25,17 +25,16 @@
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    padding-right: 10px;
+  }
 }
 
 .footer__logo {
   @media (min-width: $tablet) {
     margin-right: 35px;
   }
-}
-
-.footer__logo .logo__name {
-  width: 128px;
-  height: 24px;
 }
 
 .footer__socials {

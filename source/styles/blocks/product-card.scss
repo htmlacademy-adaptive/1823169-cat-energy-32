@@ -15,9 +15,9 @@
     grid-template-areas: "img" "content" "button";
     row-gap: 0;
     padding: 10px 37px 40px;
-    min-height: 511px;
+    min-height: 510px;
 
-    background: linear-gradient(to bottom, $section-bg-light-color 15%, $section-bg-dark-color 15%);
+    background: linear-gradient(to bottom, $section-bg-light-color 15%, #f2f2f2 15%);
 
     border-top: none;
   }
@@ -118,4 +118,5 @@
 
 .product-card__button {
   grid-area: button;
+  align-self: end;
 }

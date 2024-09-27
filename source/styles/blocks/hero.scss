@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop) {
-    background: linear-gradient(to right, $section-bg-light-color 49.1%, $accent-main-color 49.1%);
+    background: linear-gradient(to right, $section-bg-light-color 50%, $accent-main-color 50%);
   }
 }
 
@@ -49,15 +49,15 @@
   @media (min-width: $tablet) {
     align-items: start;
     max-width: 768px;
-    min-height: 850px;
+    min-height: 847px;
     margin: 0 auto;
-    padding-left: 109px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop) {
     max-width: 1440px;
     min-height: 545px;
-    padding-left: 178px;
+    padding-left: 188px;
   }
 }
 
@@ -139,15 +139,17 @@
   @media (min-width: $tablet) {
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 28px;
 
     width: auto;
     z-index: -1;
 
     @media (min-width: $desktop) {
-      padding-bottom: 52px;
-      padding-left: 528px;
+      top: -3px;
       z-index: 2;
+
+      padding-bottom: 52px;
+      padding-left: 530px;
     }
   }
 }
@@ -156,10 +158,12 @@
   @include button-style;
 
   min-width: 100%;
+  margin-top: -2px;
 
   @media (min-width: $tablet) {
     min-width: 244px;
     max-width: 416px;
+    margin-top: 0;
     padding: 14px;
 
     font-size: 20px;

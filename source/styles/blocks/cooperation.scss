@@ -33,13 +33,13 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
-    left: 20px;
+    left: 30px;
     z-index: 1;
 
     column-gap: 85px;
     max-width: 575px;
     max-height: 200px;
-    padding: 60px 74px;
+    padding: 57px 65px 60px 80px;
 
     background-color: $section-bg-light-color;
     overflow-y: scroll;
